@@ -88,8 +88,10 @@ body {
 }
 
 .button-container {
+    display: flex; /* Usamos flexbox para organizar los botones en una fila */
     width: 300px;
     justify-content: center;
+    gap: 10px;
 }
 
 /* Estilos de entrada de texto */
@@ -159,4 +161,23 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-reset {
+    padding: 10px 20px; /* Tamaño interno del botón */
+    font-size: 16px; /* Tamaño del texto */
+    border: 2px solid #000000; /* Borde con color distintivo */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #FFFFFF; /* Fondo blanco */
+    color: #000000; /* Color del texto */
+}
+
+.button-reset:hover {
+    background-color: var(--color-button-hover);
+}
+
+.button-container {
+    display: flex; /* Alinear los botones en fila */
+    justify-content: center; /* Centrarlos horizontalmente */
+    gap: 10px; /* Espacio entre botones */
 }
